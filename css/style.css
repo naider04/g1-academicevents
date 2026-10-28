@@ -284,6 +284,38 @@ body {
     line-height: 1.6;
 }
 
+/* Organizing Committee */
+.committee__card {
+    text-align: left;
+}
+
+.committee__profile {
+    display: grid;
+    grid-template-columns: 100px minmax(0, 1fr);
+    align-items: start;
+    gap: 1rem;
+}
+
+.committee__image {
+    width: 100px;
+    height: 100px;
+    flex: 0 0 100px;
+    border: 2px solid #2563eb;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.committee__name {
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+    overflow-wrap: anywhere;
+}
+
+.committee__description {
+    margin-bottom: 0;
+    margin-top: 1rem;
+}
+
 /* Dates Section */
 .dates__grid {
     display: grid;
