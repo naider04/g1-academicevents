@@ -290,8 +290,9 @@ body {
 }
 
 .committee__profile {
-    display: flex;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: 100px minmax(0, 1fr);
+    align-items: start;
     gap: 1rem;
 }
 
@@ -305,10 +306,9 @@ body {
 }
 
 .committee__name {
-    min-width: 0;
     font-size: 1.1rem;
     margin-bottom: 0.25rem;
-    overflow-wrap: break-word;
+    overflow-wrap: anywhere;
 }
 
 .committee__description {
